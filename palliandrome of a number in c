@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main() {
+    int i,j,k,temp,m,p;
+    printf("enter a number");
+    scanf("%d",&k);
+    {
+        i=k%10;
+        i=i*100;
+        j=k/10;
+        p=j%10;
+        p=p*10;
+        m=j/10;
+        temp=i+p+m;
+        if(k==temp)
+        {
+            printf("%d is a palliandrome",k);
+        }
+        else
+        {
+            printf("it is not a palliandrome");
+        }
+    }
+    
+    return 0;
